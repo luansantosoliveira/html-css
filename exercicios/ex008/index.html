@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito (destaque)</h2>
+    <p>Para destacar um termo numa frase, o colocamos <b>em negrito</b>, usando a tag não-semântica <!--e não recomendada--> &lt;b&gt;.</p>
+    <p>Nesta outra frase, usamos a tag semântica &lt;strong&gt; para destacar o termo <strong>em negrito</strong>.</p>
+    <h2>Itálico (ênfase)</h2>
+    <p>Para dar ênfase a um termo numa frase, o colocamos <i>em itálico</i>, usando a tag não-semântica <!--e não recomendada--> &lt;i&gt;.</p>
+    <p>Nesta outra frase, usamos a tag semântica &lt;em&gt; para dar ênfase ao termo <em>em itálico</em>.</p>
+    <h2>Texto marcado</h2>
+    <p>Nesta frase, marcamos <mark>este trecho</mark>, usando a tag &lt;mark&gt;.</p>
+    <p>Nesta outra frase, marcamos <mark style="background-color: lime;"">este outro trecho</mark>, com um plano de fundo personalizado, usando um parâmetro de estilo &lt;style="background-color"&gt;.</p>
+    <p>Para conceber este marcador de forma universal em uma mesma página, é recomendado fazê-lo no campo &lt;head&gt;.</p>
+    <h2>Texto grande ou pequeno</h2>
+    <p>Nesta frase, escrevemos um texto com <big>palavras grandes</big> e <small>pequenas</small>, usando as tags &lt;big&gt; <!--a tag <big> encontra-se obsoleta--> e &lt;small&gt;, respectivamente.</p>
+    <h2>Texto deletado</h2>
+    <p>Para desconsiderarmos um trecho, o marcamos como <del>excluído</del>, usando a tag &lt;del&gt;, que mostra o trecho tachado.</p>
+    <h2>Texto inserido</h2>
+    <p>Para indicarmos que um trecho foi adicionado posteriormente, o marcamos como <ins>inserido</ins>, usando a tag &lt;ins&gt;, que mostra o texto sublinhado.</p>
+    <p>Além disso, um trecho pode ser <u>sublinhado</u>, usando a tag não-semântica &lt;u&gt;.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir um texto sobrescrito, como em uma função exponencial, usamos a tag &lt;sup&gt;. Exemplo: x<sup>2</sup>.</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir um texto subscrito, como em uma fórmula de um elemento químico, usamos a tag &lt;sub&gt;. Exemplo: H<sub>2</sub>O.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="media/buddha-rodnae.ogv" controls autoplay muted loop width="200" poster="imagens/buddha-rodnae.jpg"></video> <!--Os formatos MP4, M4V, WEBM e OGV são compatíveis com a maioria dos navegadores.-->
+    <p>É recomendado hospedar um mesmo vídeo em diferentes formatos, para evitar problemas de incompatibilidade em alguns navegadores.</p>
+    <video controls autoplay muted loop width="300" poster="imagens/tree-nadezhda-moryak.jpg"> <!--Considere, ordená-los do menor vídeo para o maior.-->
+        <source src="media/Tree-Nadezhda-Moryak.mkv" type="video/mp4">
+        <source src="media/Tree-Nadezhda-Moryak.webm" type="video/webm">
+        <source src="media/tree-nadezhda-moryak.mp4" type="video/mp4">
+        <source src="media/tree-nadezhda-moryak.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <h1>Incorporando vídeos do YouTube</h1>
+    <p>Olha só esse vídeo!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Incorporando vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/197093965?h=7fbc516b5a&color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

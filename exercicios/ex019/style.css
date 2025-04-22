@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* Todo id em HTML é identificado como uma # em CSS, como em h1#principal, visto logo abaixo. Da mesma forma que toda class em HTMl, é identificada com um . em CSS.*/
+body {
+    background-color: rgb(200, 300, 200);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: green;
+}
+h1#principal {
+    text-align: center;
+    background-color: #00ff00;
+    color: white;
+}
+h2 {
+    color: rgb(40, 200, 40);
+}
+.basico {
+    color: rgb(40, 200, 40);
+    font-weight: bold;
+}
+.intermediario {
+    color: rgb(200, 200, 40);
+}
+.avancado {
+    color: rgb(200, 40, 40);
+}
+.destaque {
+    background-color: #f075b3;
+    text-shadow: white 1px 1px 5px;
+}

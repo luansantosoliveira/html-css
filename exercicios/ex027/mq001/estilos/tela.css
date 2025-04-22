@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/* Estilo para telas */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Space Mono', 'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+
+header {
+    background-color: rgb(158, 158, 158);
+}
+
+header > h1 {
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: white;
+    
+    padding: 20px;
+    padding-bottom: 0%;
+}
+
+menu ul {
+    list-style-type: none;
+}
+
+menu li {
+    display: inline-block;
+    padding: 10px;
+    
+    background-color: gray;
+    color: white;
+
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+article {
+    width: 620px;
+    display: block;
+    margin: auto;
+}
+
+article h2 {
+    text-align: center;
+    text-transform: uppercase;
+
+    padding-top: 20px;
+}
+
+article p {
+    font-family: Outfit, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+    margin: 20px;
+}

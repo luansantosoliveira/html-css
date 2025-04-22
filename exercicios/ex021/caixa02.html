@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+        
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: rgba(143, 188, 143, 0.5);
+            margin: 0px;
+        }
+        header {
+            /* width: 600px; */
+            background-color: wheat;
+            padding: 10px;
+            margin: 15px;
+            text-align: center;
+            border-radius: 10px 10px;
+            box-shadow: 2.5px 2.5px 2.5px 1px gray;
+        }
+        h1 {
+            font-family: Courgette, cursive;
+            font-size: 45px;
+            font-weight: bold;
+            color: rgba(0, 128, 128, 0.9);
+        }
+        nav {
+            background-color: rgba(255, 166, 0, 0.5);
+            padding: 5px 2.5px;
+            margin: 5px;
+            box-shadow: 2.5px 2.5px 2.5px 1px gray;
+            border-radius: 5px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(0, 128, 128);
+            font-weight: bolder;
+            margin-right: 45px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: wheat;
+            padding: 10px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 2.5px 2.5px 2.5px 1px gray;
+        }
+        section#assuntos > p > a {
+            text-decoration: none;
+            padding: 2px 0px;
+            margin: 5px;
+            margin-right: 45px;
+            color: rgba(0, 128, 128);
+            font-weight: bolder;
+        }
+        section#assuntos > p > a:hover {
+            text-decoration: underline;
+        }
+        article {
+            background-color: rgba(0, 128, 128, 0.5);
+            padding: 2px 0px;
+            margin: 5px;
+            box-shadow: 2.5px 2.5px 2.5px 1px gray;
+            border-radius: 5px;
+        }
+        article > h2 {
+            padding: 0px 10px;
+        }
+        article > p {
+            padding: 0px 10px;
+            text-align: justify;  
+        }
+        article > aside > p {
+            background-color: rgba(0, 128, 128, 0.75);
+            padding: 2.5px 10px;
+            text-align: right;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: rgba(0, 128, 128, 0.75);
+            color: wheat;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 1px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+            background-color: wheat;
+            border-radius: 50%;
+            box-shadow: 2.5px 2.5px 2.5px 1px gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luan Santos Oliveira</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p><a href="#">Esportes</a>
+               <a href="#">Política</a>
+               <a href="#">Tecnologia</a></p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Artigo sobre o Rio de Janeiro no início do século</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse nobis dolorem, ex veniam expedita quisquam omnis voluptates totam optio ut consequuntur vero explicabo quis reprehenderit? Explicabo vitae id perferendis qui.</p>
+                <aside>
+                    <p>Artigo de Machado de Assis</p>
+                </aside>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et nemo, deserunt aliquid consequuntur, enim aperiam, corrupti doloremque ut repellendus assumenda neque! Veritatis saepe dolores hic molestias corrupti tempore, minus sint.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae molestiae ipsum similique ipsam, facere repellendus architecto blanditiis iure adipisci labore magni inventore recusandae error ex soluta numquam cumque omnis reprehenderit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat dolores amet voluptate dignissimos repudiandae explicabo, voluptatibus qui, quos excepturi reiciendis tempora magni possimus. Possimus expedita, praesentium aut quis dolores illum?</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <strong>Luan Santos Oliveira</strong>. Setembro de 2021.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

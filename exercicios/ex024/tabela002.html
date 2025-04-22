@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+        }
+        
+        table {
+            width: auto;
+            border-collapse: collapse;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14.5px;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.35em;
+            font-weight: bold;
+            border: 1px solid rgba(169, 169, 169, 0.75);
+            padding: 10px;
+            margin-bottom: 2.5px;
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+        }
+        
+        thead, tfoot {
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(128, 128, 128);
+        }
+
+        th, td {
+            border: 1px solid rgba(169, 169, 169, 0.75);
+            padding: 10px;
+        }
+
+        th.text, td.text {
+            text-align: left;
+        }
+
+        /*tbody > tr:nth-child(odd) {
+            background-color: white;
+        }*/
+
+        tbody > tr:nth-child(even) { /* 2n */
+            background-color: lightgray;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas grandes</h1>
+    <!--Anatomia para Tabelas grandes
+
+        1. Table - <table>
+            1.1. Caption - <caption> = legenda
+            1.2. Table header - <thead> = cabeçalho de tabela
+                1.2.1. <tr>, <th>, <td>
+            1.3. Table body - <tbody> = corpo de tabela
+                1.3.1. <tr>, <th>, <td>
+            1.4. Table footer - <tfoot> = rodapé de tabela
+                1.4.1. <tr>, <th>, <td>.-->
+    <h2>Unidades federativas do Brasil por população</h2>
+    <p>A seguinte tabela apresenta os dados da população brasileira por unidade federativa, conforme o documento "<a href="https://ftp.ibge.gov.br/Censos/Censo_Demografico_2022/Previa_da_Populacao/POP2022_Municipios.pdf" target="_blank">Prévia da população calculada com base nos resultados do Censo Demográfico 2022 até 25 de dezembro de 2022</a>", com base em dados prévios do Censo de 2022 do <a href="https://cidades.ibge.gov.br/" target="_blank">IBGE - Instituto Brasileiro de Geografia e Estatística</a>.</p>
+    <table>
+        <caption>População das unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 175px">Unidade federativa</th>
+                <th scope="col" style="width: 100px">População</th>
+                <th scope="col" style="width: 125px">Porcentagem da população total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/20px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt="Bandeira do estado de São Paulo"> São Paulo</td>
+                <td class="num">46.024.937</td>
+                <td>22,2%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="Bandeira do estado de Minas Gerais"> Minas Gerais</td>
+                <td class="num">20.732.660</td>
+                <td>10,0%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="Bandeira do estado do Rio de Janeiro"> Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+                <td>8,0%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="Bandeira do estado da Bahia"> Bahia</td>
+                <td class="num">14.659.023</td>
+                <td>7,1%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="Bandeira do estado do Paraná"> Paraná</td>
+                <td class="num">11.835.379</td>
+                <td>5,7%</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="Bandeira do estado do Rio Grande do Sul"> Rio Grande do Sul</td>
+                <td class="num">11.088.065</td>
+                <td>5,3%</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="Bandeira do estado de Pernambuco"> Pernambuco</td>
+                <td class="num">9.051.113</td>
+                <td>4,4%</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="Bandeira do estado do Ceará"> Ceará</td>
+                <td class="num">8.936.431</td>
+                <td>4,3%</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt="Bandeira do estado do Pará"> Pará</td>
+                <td class="num">8.442.962</td>
+                <td>4,1%</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="Bandeira do estado de Santa Catarina"> Santa Catarina</td>
+                <td class="num">7.762.154</td>
+                <td>3,7%</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt="Bandeira do estado de Goiás"> Goiás</td>
+                <td class="num">6.950.976</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="Bandeira do estado do Maranhão"> Maranhão</td>
+                <td class="num">6.800.605</td>
+                <td>3,3%</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt="Bandeira do estado do Espírito Santo"> Espírito Santo</td>
+                <td class="num">4.108.508</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt="Bandeira do estado da Paraíba"> Paraíba</td>
+                <td class="num">4.030.961</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt="Bandeira do estado do Amazonas"> Amazonas</td>
+                <td class="num">3.952.262</td>
+                <td>1,9%</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt="Bandeira do estado de Mato Grosso"> Mato Grosso</td>
+                <td class="num">3.784.239</td>
+                <td>1,8%</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt="Bandeira do estado do Rio Grande do Norte"> Rio Grande do Norte</td>
+                <td class="num">3.303.953</td>
+                <td>1,6%</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt="Bandeira do estado do Piauí"> Piauí</td>
+                <td class="num">3.270.174</td>
+                <td>1,6%</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt="Bandeira do estado de Alagoas"> Alagoas</td>
+                <td class="num">3.125.254</td>
+                <td>1,5%</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt="Bandeira do Distrito Federal"> Distrito Federal</td>
+                <td class="num">2.923.369</td>
+                <td>1,4%</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="Bandeira do estado de Mato Grosso do Sul"> Mato Grosso do Sul</td>
+                <td class="num">2.833.742</td>
+                <td>1,4%</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt="Bandeira do estado de Sergipe"> Sergipe</td>
+                <td class="num">2.211.868</td>
+                <td>1,1%</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt="Bandeira do estado de Rondônia"> Rondônia</td>
+                <td class="num">1.616.379</td>
+                <td>0,8%</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt="Bandeira do estado do Tocantins"> Tocantins</td>
+                <td class="num">1.584.306</td>
+                <td>0,8%</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt="Bandeira do estado do Acre"> Acre</td>
+                <td class="num">829.780</td>
+                <td>0,4%</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt="Bandeira do estado do Amapá"> Amapá</td>
+                <td class="num">774.268</td>
+                <td>0,4%</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt="Bandeira do estado de Roraima"> Roraima</td>
+                <td class="num">634.805</td>
+                <td>0,3%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>-</td>
+                <th scope="row" class="text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Flag_of_Brazil.svg/20px-Flag_of_Brazil.svg.png" alt="Bandeira do Brasil"> Total de habitantes</th>
+                <td class="num"><strong>207.883.699</strong></td>
+                <td><strong>100%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Regiões brasileiras por população</h2>
+    <table>
+        <caption>População das regiões do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col" style="width: 100px">Região</th>
+                <th scope="col" style="width: 100px">População</th>
+                <th scope="col" style="width: 125px">Porcentagem da população total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td class="text">Sudeste</td>
+                <td class="num">87.481.631</td>
+                <td>42,10%</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="text">Nordeste</td>
+                <td class="num">55.389.382</td>
+                <td>26,66%</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="text">Sul</td>
+                <td class="num">30.685.598</td>
+                <td>14,77%</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="text">Norte</td>
+                <td class="num">17.834.762</td>
+                <td>8,58%</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="text">Centro-Oeste</td>
+                <td class="num">16.492.326</td>
+                <td>7,93%</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Tabelas extraídas do verbete <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o">Lista de unidades federativas do Brasil por população</a> da <strong>Wikipédia, a enciclopédia livre</strong>.</p>
+</body>
+</html>

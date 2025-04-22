@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        a {
+            color: gray;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: darkred;
+        }
+        a:active {
+            color: blue;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a::before {
+            content: '> ';
+        }
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+        .especial {
+            background-color: lightpink;
+            color: gray;
+        }
+        .especial::before {
+            content: '>>>';
+        }
+        .especial::after {
+            content: '<<<';
+        }
+        /* Em seletores personalizados, o símbolo # corresponde a uma id; o símbolo . corresponde a uma class; o símbolo : corresponde a uma pseudo-class; o símbolo :: corresponde a um pseudo-element; e o símbolo > indica uma propriedade children.*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório no GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

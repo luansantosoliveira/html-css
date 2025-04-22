@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@font-face {
+    font-family: 'Xilosa';
+    src: url(fonts/xilosa_.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+    --fonte-xilo: 'Xilosa', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte2);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase; Coloca todo o texto em letras maiúsculas.*/
+    font-variant: small-caps;
+    font-family: var(--fonte-xilo);
+    font-size: 4.5em; /*10vw*/
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-left: 50px;
+    padding-bottom: 10vh;
+    line-height: 1.65em;
+    font-family: var(--fonte-xilo);
+    font-size: 1.5em; /*3.5vw*/
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    color: white;
+    background-color: rgb(50, 50, 50);
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px 1px 25px 25px rgba(0, 0, 0, 0.5);
+}
+
+section.image > p {
+    /*width: 400px;*/
+    display: inline-block;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 0px black;
+}
+
+section > p.double {
+    padding-top: 35px;
+}
+
+section#img001 {
+    background-image: url('../pacote-d012/imagens/background003.jpg');
+    background-position: right center;
+}
+
+section#img002 {
+    background-image: url('../pacote-d012/imagens/background004.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
